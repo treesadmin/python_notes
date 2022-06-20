@@ -1,11 +1,11 @@
 def google(user):
-    return "GooGLe: {}".format(user)
+    return f"GooGLe: {user}"
 
 def youtube(user):
-    return "youtube: {}".format(user)
+    return f"youtube: {user}"
 
 def linkedin(user):
-    return "linkedin: {}".format(user)
+    return f"linkedin: {user}"
 
 def twitter(user):
-    return "twitter: {}".format(user)
+    return f"twitter: {user}"

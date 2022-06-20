@@ -10,11 +10,11 @@ async def main():
         loop = asyncio.get_event_loop()
         futures = []
         response = []
-        for i in range(20):
-            # look here for sending more parameters to the loop.runn_in_executor
-            # basically we must use functools
-            # https://stackoverflow.com/questions/53368203/passing-args-kwargs-to-run-in-executor
-            url = 'https://httpdump.io/{}/a/{}'
+        # look here for sending more parameters to the loop.runn_in_executor
+        # basically we must use functools
+        # https://stackoverflow.com/questions/53368203/passing-args-kwargs-to-run-in-executor
+        url = 'https://httpdump.io/{}/a/{}'
+        for _ in range(20):
             url1 = re.sub('{}','placeholder', url)
             futures.append(loop.run_in_executor(executor, requests.get,url1))
 
